@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-Application<messages>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "app.messages.Application",
+      "projectName": "messages",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

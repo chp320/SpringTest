@@ -19,7 +19,17 @@
         <log4j.version>2.17.1</log4j.version>
     </properties>
 
+    <!-- '23.12.09, 웹 애플리케이션으로 변경하기 위해 스프링 부트 의존성 추가 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.0.RELEASE</version>
+    </parent>
+
     <dependencies>
+
+        <!-- '23.12.09, 스프링 부트 의존성 추가하면서 parent/child pom 관련해서 아래 항목 주석 처리 -->
+        <!--
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -34,6 +44,12 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>${log4j.version}</version>
+        </dependency>
+        -->
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
     <build>
