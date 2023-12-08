@@ -23,7 +23,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.0.RELEASE</version>
+        <version>2.7.18</version>
     </parent>
 
     <dependencies>
@@ -56,6 +56,8 @@
         <finalName>messages</finalName>
         <plugins>
             <plugin>
+                <!-- '23.12.09, maven-assembly-plugin 은 스프링 부트 애플리케이션 실행불가하기 때문에 하기 내용 주석 처리 -->
+                <!--
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <executions>
@@ -77,6 +79,10 @@
                         </configuration>
                     </execution>
                 </executions>
+                -->
+                <!-- '23.12.09, 스프링 부트 애플리케이션 실행 위해 추가 -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
