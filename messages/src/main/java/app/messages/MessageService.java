@@ -1,5 +1,8 @@
 package app.messages;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MessageService {
   private MessageRepository repository;
 
