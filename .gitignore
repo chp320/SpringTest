@@ -1,2 +1,3 @@
-# class 파일은 불필요
+# bin 관련 파일 불필요
 *.class
+*.jar
