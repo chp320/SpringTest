@@ -1,3 +1,6 @@
+# 이미 추가된 파일을 gitignore 적용을 하고 싶다면 먼저 git 에서 해당 파일 삭제가 우선되어야 함
+# git rm [파일명]
+# git commit -m [메시지]
 *.properties
 *.class
 *.jar
