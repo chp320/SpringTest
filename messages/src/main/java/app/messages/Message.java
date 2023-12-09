@@ -1,14 +1,34 @@
 package app.messages;
 
-public class Message {
-  private String text;
+import java.util.Date;
 
+public class Message {
+  private Integer id;
+  private String text;
+  private Date createdDate;
+  
   public Message(String text) {
     this.text = text;
+    this.createdDate = new Date();
+  }
+
+  public Message(Integer id, String text, Date createdDate) {
+    this.id = id;
+    this.text = text;
+    this.createdDate = createdDate;
+  }
+
+  public Integer getId() {
+    return id;
   }
 
   public String getText() {
     return text;
   }
+
+  public Date getCreatedDate() {
+    return createdDate;
+  }
+
   
 }

@@ -10,7 +10,7 @@ public class MessageService {
     this.repository = repository;
   }
 
-  public void save(String text) {
-    this.repository.saveMessage(new Message(text));
+  public Message save(String text) {
+    return repository.saveMessage(new Message(text));
   }
 }
